@@ -1,6 +1,15 @@
 const agentId = "3PPLCYC1kgc-0rlmpZ13y";
 
 module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/help',
+        permanent: false,
+      }
+    ]
+  },
   async rewrites() {
     return [
       {
